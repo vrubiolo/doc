@@ -65,21 +65,15 @@ It might also be possible that the web server (nginx) or the SSH server have bee
 - You can check the available disk space via `df -h`. If one of your partitions is full, you'll need to identify what is using that space on your system and perform some cleanup. One can install the `ncdu` software via the `apt install ncdu` command and then call `ncdu /` to analyze folder size of the entire filesystem.
 - You can check on RAM/swap usage via the `free -h` command. Depending on the results, it might be necessary to perform some memory optimizations on your machine so that less RAM is used (remove bloated and useless apps, ...) or to add more RAM or a swap file.
 
-#### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
+#### Your server is reachable over IPv6 but not over IPv4 or vice-versa
 
-Vous pouvez le vérifier en tentant de faire des ping sur votre serveur en IPv4 et en IPv6.
+You can check this by attempting to ping your server over IPv4 and IPv6.
 
-Dans un tel cas, il est possible que vous arriviez à accéder à votre web admin en IPv6 mais pas en SSH potentiellement en IPv4 par défaut...
+In such a case, you may be able to reach the webadmin over IPv6 but not via SSH, which normally defaults to IPv4...
 
-Dans ce cas il faut résoudre votre problème de connectivité.
+In this case, you should tackle your connectivity issue.
 
-Dans certains, cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.
-
-
-
-
-
-
+In certain cases, a box/router firmware upgrade did enable IPb6, leading to configuration problems with your domain name.
 
 ## La webadmin fonctionne, mais certaines applications web me renvoient une erreur 502.
 
