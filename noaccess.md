@@ -73,13 +73,11 @@ In such a case, you may be able to reach the webadmin over IPv6 but not via SSH,
 
 In this case, you should tackle your connectivity issue.
 
-In certain cases, a box/router firmware upgrade did enable IPb6, leading to configuration problems with your domain name.
+In certain cases, a box/router firmware upgrade did enable IPv6, leading to configuration problems with your domain name.
 
-## La webadmin fonctionne, mais certaines applications web me renvoient une erreur 502.
+## The webadmin interface is working but certain web applications return a 502 error code.
 
-Il est fort probablement que le service correspondant à ces applications soit en panne (typiquement pour les applications PHP, il s'agit de php7.0-fpm ou php7.3-fpm). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
-
-
+It's very likely that the service backing those applications is out of service (typically for PHP applications, that would be `php7.0-fpm` or `php7.3-fpm`). You could thus try to relaunch the service and if that does not work, inspect the associated service log and/or [ask for help](/help).
 
 
 ## Vous avez perdu votre mot de passe administrateur ? (ou bien le mot de passe est refusé)
